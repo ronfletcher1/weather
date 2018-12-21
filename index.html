@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form id="weather-form" action="">
+            <label>Please enter a zip code to search for a lavel</label>
+            <div class="input-group">
+                <input type="number" class="zip-code form-control" length=5 value="30328">
+                <button type="submit" class="btn btn-success">Get Weather</button>
+            </div>
+        </form>
+        <div class="col-12 weather-data"></div>
+        <canvas id="weather-canvas" height="500px" width="500px"> </canvas>
+    </div>
+    <div class="thermo">
+        <span class="thermometer">0&deg;C</span>
+    </div>
+</div>            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="config.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
